@@ -42,7 +42,3 @@ git push -u origin main
 The page will be live at:
 `https://berkayol.github.io/Eontera-Privacy-Policy/`
 
-## Placeholder Note
-The `<span class="placeholder">` elements inside `index.html` (such as `[TO BE SET BEFORE PUBLICATION]`) must be updated with the actual effective date and contact information before the final submission to Google Play. 
-
-**Do not use fake contact details or fake effective dates.** Update them to real values.
