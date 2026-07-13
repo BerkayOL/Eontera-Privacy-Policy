@@ -1,26 +1,52 @@
 # Eontera Privacy Policy
 
-Public privacy policy page for the **Eontera** Android app (Package: `com.berkay.eontera`).
+Static privacy policy site for **Eontera**.
 
-This is a static, tracker-free, zero-cookie webpage hosted on GitHub Pages to provide a transparent and fast-loading privacy policy for Eontera users and for Google Play submission requirements.
+## Purpose
 
-## Features
-- **No Analytics/Tracking:** Absolutely zero cookies, local storage, or tracking scripts.
-- **No External Dependencies:** No external fonts (uses system fonts), CDNs, or third-party assets to ensure complete privacy and fast load times.
-- **Responsive Design:** Mobile-first, responsive dark layout optimized for readability.
-- **Dual Language:** Built-in Turkish and English support via simple CSS/JS toggles.
-- **Accessibility:** Accessible contrast ratios and `prefers-reduced-motion` support.
+This repository contains a production-ready, GitHub Pages-compatible privacy
+policy page for the Eontera Android application. The site is designed to be
+readable, lightweight, and suitable for Google Play privacy-policy publication.
 
-## Project Files
-- `index.html` - The static HTML content containing both Turkish and English policies.
-- `styles.css` - Pure CSS styling, no frameworks, no external font requests.
-- `script.js` - Minimal vanilla JS for toggling languages via `#tr` and `#en` hash links.
-- `robots.txt` - Allow web crawlers to index the policy.
+## Android Package
 
-## Maintenance and Deployment
-This page is hosted via GitHub Pages. Any push to the `main` branch will automatically reflect on the live website once GitHub Pages is configured.
+`com.berkay.eontera`
 
-### Initial Setup & Push
+## Static GitHub Pages Page
+
+This site is intended to be published as a static GitHub Pages page. It does
+not use analytics, cookies, tracking scripts, external fonts, CDN assets, or
+client-side storage for tracking behavior.
+
+## Files
+
+- `index.html` - Semantic, accessible privacy policy page with Turkish and English content.
+- `styles.css` - Local CSS design system, responsive layout, and print styles.
+- `script.js` - Small progressive-enhancement script for language switching, active navigation, and scroll progress.
+- `README.md` - Repository documentation and deployment notes.
+- `.gitignore` - Common local development ignores.
+- `robots.txt` - Public crawler allow rule.
+
+## Local Preview
+
+Example local preview command:
+
+```bash
+python -m http.server 4173
+```
+
+Then open:
+
+```text
+http://127.0.0.1:4173/
+```
+
+## Deployment
+
+Push the repository to GitHub and publish it with GitHub Pages.
+
+### First-time setup
+
 ```bash
 git init
 git add .
@@ -29,16 +55,41 @@ git branch -M main
 git remote add origin https://github.com/BerkayOL/Eontera-Privacy-Policy.git
 git push -u origin main
 ```
-*(If remote already exists, use `git remote set-url origin https://github.com/BerkayOL/Eontera-Privacy-Policy.git` before pushing).*
 
-### GitHub Pages Setup
-1. Go to **Settings** in the GitHub repository.
-2. Navigate to **Pages** in the left sidebar.
-3. Under **Build and deployment**:
-   - Source: Select **Deploy from a branch**
-   - Branch: Select **main** and folder **/(root)**
-4. Click **Save**.
+### If the remote already exists
 
-The page will be live at:
-`https://berkayol.github.io/Eontera-Privacy-Policy/`
+```bash
+git remote set-url origin https://github.com/BerkayOL/Eontera-Privacy-Policy.git
+git push -u origin main
+```
 
+## GitHub Pages Setup
+
+```text
+GitHub repository → Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: main → Folder: /root → Save
+```
+
+## Expected URL After Publishing
+
+```text
+https://berkayol.github.io/Eontera-Privacy-Policy/
+```
+
+This URL should be added to the mobile application only after GitHub Pages is
+actually published and reachable.
+
+## Maintenance
+
+- Keep the package identifier as `com.berkay.eontera`.
+- Replace placeholder effective date, last updated, and contact fields before release.
+- Review policy wording whenever app permissions, data sources, or notification behavior changes.
+- Preserve the no-tracking and no-third-party-asset constraints.
+
+## Legal Note
+
+This repository provides a static publication surface for the privacy policy. It
+does not create any independent analytics, tracking, or cookie behavior.
+
+## Contact
+
+`[Contact information to be inserted]`
