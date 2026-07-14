@@ -88,6 +88,7 @@ const translations = {
     provider4: "Temel harita kutucukları",
     provider5: "Kamusal yörünge elemanları",
     provider6: "ISS konum bağlamı",
+    notAvailable: "Mevcut değil",
     sectionThirdPartyFoot:
       "Eontera; NASA, USGS, EONET, CelesTrak, SpaceX veya Starlink ile bağlı, onlar tarafından onaylı ya da resmî bir hizmet değildir.",
     sectionRetentionTitle: "5. Saklama ve silme",
@@ -204,6 +205,7 @@ const translations = {
     provider4: "Base-map tiles",
     provider5: "Public orbital elements",
     provider6: "ISS position context",
+    notAvailable: "Not available",
     sectionThirdPartyFoot:
       "Eontera is not affiliated with, endorsed by, or an official service of NASA, USGS, EONET, CelesTrak, SpaceX, or Starlink.",
     sectionRetentionTitle: "5. Retention and deletion",
