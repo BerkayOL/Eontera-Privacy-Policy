@@ -54,9 +54,9 @@
       <div class="shell">
         <ul class="summary-list">
           <li data-i18n="cardAccountsTitle">Hesap sistemi yok</li>
-          <li data-i18n="cardAdsTitle">Reklam ve analytics yok</li>
+          <li data-i18n="cardAdsTitle">Reklam ve analiz yok</li>
           <li data-i18n="cardLocationTitle">Konum kullanımı sınırlı</li>
-          <li data-i18n="cardStorageTitle">Yerel watch-zone verisi</li>
+          <li data-i18n="cardStorageTitle">Yerel izleme bölgesi verisi</li>
         </ul>
       </div>
     </section>
@@ -89,25 +89,25 @@
           <div class="policy-subsection">
             <h3 data-i18n="subLocationTitle">2.1 İsteğe bağlı cihaz konumu</h3>
             <p data-i18n="subLocationBody">
-              Kullanıcı approximate location izni verirse, bu bilgi yalnızca ISS veya benzeri gökyüzü bağlamı sunan özelliklerde gözlemci bağlamını hesaplamak için kullanılır.
+              Kullanıcı yaklaşık konum izni verirse, bu bilgi yalnızca ISS veya benzeri gökyüzü bağlamı sunan özelliklerde gözlemci bağlamını hesaplamak için kullanılır.
             </p>
             <ul>
-              <li data-i18n="subLocationItem1">Yalnızca approximate (coarse) konum kullanılır.</li>
-              <li data-i18n="subLocationItem2">Kullanım foreground ile sınırlıdır; background location yoktur.</li>
+              <li data-i18n="subLocationItem1">Yalnızca yaklaşık (coarse) konum kullanılır.</li>
+              <li data-i18n="subLocationItem2">Kullanım ön plan ile sınırlıdır; arka plan konumu kullanılmaz.</li>
               <li data-i18n="subLocationItem3">Ana harita deneyimi için konum izni zorunlu değildir.</li>
-              <li data-i18n="subLocationItem4">Kamera kullanılmaz; yönelim sensörleri ve approximate konum yeterlidir.</li>
+              <li data-i18n="subLocationItem4">Kamera kullanılmaz; yönelim sensörleri ve yaklaşık konum yeterlidir.</li>
             </ul>
           </div>
 
           <div class="policy-subsection">
-            <h3 data-i18n="subWatchTitle">2.2 Watch-zone verileri</h3>
+            <h3 data-i18n="subWatchTitle">2.2 İzleme bölgesi verileri</h3>
             <p data-i18n="subWatchBody">
-              Kullanıcı bir watch zone oluşturduğunda seçilen bölge adı, koordinatlar ve yarıçap bilgisi uygulamanın cihaza özel depolama alanında yerel olarak tutulur.
+              Kullanıcı bir izleme bölgesi oluşturduğunda seçilen bölge adı, koordinatlar ve yarıçap bilgisi uygulamanın cihaza özel depolama alanında yerel olarak tutulur.
             </p>
             <ul>
-              <li data-i18n="subWatchItem1">Depolama Android uygulama sandbox'ı içindeki yerel veri yapılarındadır.</li>
-              <li data-i18n="subWatchItem2">Bu veriler app-level encrypted değildir.</li>
-              <li data-i18n="subWatchItem3">Watch-zone verileri herhangi bir uzak hesap veya backend hizmetine yüklenmez.</li>
+              <li data-i18n="subWatchItem1">Depolama Android uygulama korumalı alanı (sandbox) içindeki yerel veri yapılarındadır.</li>
+              <li data-i18n="subWatchItem2">Bu veriler uygulama düzeyinde şifrelenmez.</li>
+              <li data-i18n="subWatchItem3">İzleme bölgesi verileri herhangi bir uzak hesap veya sunucu hizmetine yüklenmez.</li>
               <li data-i18n="subWatchItem4">Veriler siz silene, uygulama verisini temizleyene veya uygulamayı kaldırana kadar kalabilir.</li>
             </ul>
           </div>
@@ -151,17 +151,17 @@
           
           <div class="policy-subsection">
             <h3 data-i18n="notCollectedSensitiveTitle">Hassas erişimler</h3>
-            <p data-i18n="notCollectedSensitiveBody">Precise location, background location, kamera, mikrofon ve medya verisi işlenmez.</p>
+            <p data-i18n="notCollectedSensitiveBody">Kesin konum, arka plan konumu, kamera, mikrofon ve medya verisi işlenmez.</p>
           </div>
           
           <div class="policy-subsection">
             <h3 data-i18n="notCollectedCommercialTitle">Ticari izleme verileri</h3>
-            <p data-i18n="notCollectedCommercialBody">Reklam tanımlayıcıları, analytics SDK verileri, ödeme bilgileri ve IAP verileri yoktur.</p>
+            <p data-i18n="notCollectedCommercialBody">Reklam tanımlayıcıları, analiz SDK verileri, ödeme bilgileri ve uygulama içi satın alma (IAP) verileri yoktur.</p>
           </div>
           
           <div class="policy-subsection">
             <h3 data-i18n="notCollectedSocialTitle">Sosyal içerik</h3>
-            <p data-i18n="notCollectedSocialBody">UGC, sosyal paylaşım, kişi listesi, takvim veya çağrı verisi toplanmaz.</p>
+            <p data-i18n="notCollectedSocialBody">Kullanıcı Tarafından Oluşturulan İçerik (UGC), sosyal paylaşım, kişi listesi, takvim veya çağrı verisi toplanmaz.</p>
           </div>
         </section>
 
@@ -235,7 +235,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td data-i18n="retentionWatchData">Watch zones</td>
+                  <td data-i18n="retentionWatchData">İzleme bölgeleri</td>
                   <td data-i18n="retentionWatchPeriod">Kullanıcı silene kadar</td>
                   <td data-i18n="retentionWatchDelete">Uygulama içi silme veya uygulama verisini temizleme</td>
                 </tr>
@@ -250,7 +250,7 @@
                   <td data-i18n="retentionPrefsDelete">Ayarları değiştirme veya veri temizleme</td>
                 </tr>
                 <tr>
-                  <td data-i18n="retentionLocationData">Approximate location</td>
+                  <td data-i18n="retentionLocationData">Yaklaşık konum</td>
                   <td data-i18n="retentionLocationPeriod">Kalıcı olarak tutulmaz</td>
                   <td data-i18n="retentionLocationDelete">Cihaz ayarlarından izni geri alma</td>
                 </tr>
